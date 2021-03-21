@@ -12,6 +12,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-color: black;
 }
 
 main{
@@ -61,4 +62,21 @@ main{
     font-weight: 600;
     cursor: pointer;
     color: white;
+    outline: none;
+    transition:  all 300ms;
+}
+
+
+.caja__trasera button:hover{
+    background: white;
+    color: #46a2fd;
+}
+
+/*formularios*/
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    color: white;
+    position: absolute;
+    border-radius: 20px;
 }
