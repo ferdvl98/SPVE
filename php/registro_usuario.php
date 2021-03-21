@@ -16,7 +16,6 @@
                 window.location ="../index.php";
             </script>
         ';
-
     }else{
         if($pass != $pass2){
             echo '
@@ -41,7 +40,6 @@
             }else{
                 $sql = "INSERT INTO cuentas (nombre, telefono, usuario, contrasena)
                 VALUES ('$nombre', $telefono, '$user', '$pass')";
-
                 if ($conexion->query($sql) === TRUE) {
                     echo '
                     <script>
@@ -58,11 +56,8 @@
                 ';
                 }
             }
-
-
         }
     }
-
 
 
 
