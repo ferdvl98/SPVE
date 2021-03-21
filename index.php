@@ -28,18 +28,18 @@
                 <!--Login-->
                 <form action="" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electrónico" name="">
+                    <input type="text" placeholder="Nombre de Usuario" name="">
                     <input type="password" placeholder="Contraseña" name="" >
                     <button name="" id="login">Entrar</button>
                 </form>
                 <!--Registro-->
-                <form action="" class="formulario__register">
+                <form action="php/registro_usuario.php" method="POST" class="formulario__register">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre Completo" name="">
-                    <input type="number" name=""  placeholder="Número de Teléfono">
-                    <input type="text" name=""  placeholder="Nombre de Usuario">
-                    <input type="password" name=""  placeholder="Contraseña">
-                    <input type="password" name=""  placeholder="Confirmar Contraseña">
+                    <input type="text" placeholder="Nombre Completo" name="nombre">
+                    <input type="number" name="tel"  placeholder="Número de Teléfono">
+                    <input type="text" name="user"  placeholder="Nombre de Usuario">
+                    <input type="password" name="pass"  placeholder="Contraseña">
+                    <input type="password" name="pass2"  placeholder="Confirmar Contraseña">
                     <button name="" id="singup">Registrarse</button>
                 </form>
             </div>   
