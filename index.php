@@ -20,7 +20,7 @@
                 <div class="caja__trasera_register">
                     <h3>¿Aún no tienes una cuenta?</h3>
                     <p>Registrate para Iniciar Sesión</p>
-                    <button id="btn__iniciar-sesion">Registrarse</button>
+                    <button id="btn__registrarse">Registrarse</button>
                 </div>
             </div> 
             <!-- Formulario de registro y Login-->
@@ -45,5 +45,6 @@
             </div>   
         </div>
     </main>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
