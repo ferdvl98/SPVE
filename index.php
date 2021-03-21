@@ -13,7 +13,7 @@
             <div class="caja__trasera">
                 <div class="caja__trasera_login">
                     <h3>¿Ya tienes una cuenta?</h3>
-                    <p>Inicia sesión</p>
+                    <p>Inicia sesión para ingresar</p>
                     <button id="btn__iniciar-sesion">Iniciar Sesión</button>
                 </div>
 
