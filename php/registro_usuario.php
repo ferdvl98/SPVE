@@ -8,6 +8,7 @@
     $pass = $_POST["pass"];
     $pass2 = $_POST["pass2"];
     $ifuser = false;
+   
 
     if (empty($nombre) || empty($telefono) || empty($user) || empty($pass) || empty($pass2)) {
         echo '
@@ -38,6 +39,7 @@
                 </script>
             ';
             }else{
+                $pass = hash('sha512', $pass);
                 $sql = "INSERT INTO cuentas (nombre, telefono, usuario, contrasena)
                 VALUES ('$nombre', $telefono, '$user', '$pass')";
                 if ($conexion->query($sql) === TRUE) {
