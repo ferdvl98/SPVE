@@ -11,7 +11,7 @@
     
     if(mysqli_num_rows($validar_login) > 0){
         $_SESSION["usuario"] = $user;
-        header("location: ../bienvenido.php");
+        header("location: ../menu.php"); /* sustituir por mi archivo*/
         exit;
     }else{
         echo '
@@ -21,4 +21,6 @@
             </script>
             ';
     }
+
+
 ?>
