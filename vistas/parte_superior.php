@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -122,24 +122,11 @@
                 Empleados
             </div>
 
-
-            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-address-book"></i>
-                    <span>Usuarios</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Registros:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Registrar</a>
-                    </div>
-                </div>
+                    <span>Ver usuarios</span></a>
             </li>
-
-
             <!-- Nav Item - Charts 
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
