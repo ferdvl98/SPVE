@@ -7,51 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <script src="../assets/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <script src="../assets/js/JsBarcode.all.min.js"></script>
+    <script src="../assets/js/jquery-3.0.0.min.js"></script>
+    <title>Código de Barras</title>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            /*$("#guardar").click(function() {
+                var datos = $("#formulario").serialize();
+                $.ajax({
+                    url: "../php/insertar_cb.php",
+                    method: "POST",
+                    data: datos,
+                    success: function(data) {
+                        alert(data);
+                        //borrar2();
+                    }
+                });
+                return false;
+            });*/
+
+        });
+    </script>
 </head>
 
 <body>
-    <div class="container"><br><br> 
+    <div class="container"><br><br>
         <legend>Productos</legend>
-        <form>
+        <form id="formulario" action="../php/insertar_cb.php" method="post">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Producto</label>
-                    <input type="text" class="form-control" id="inputProduct" placeholder="Nombre del producto">
+                    <input name = "producto" type="text" class="form-control" id="inputProduct" placeholder="Nombre del producto">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Proveedor</label>
-                    <input type="text" class="form-control" id="inputSupplier" placeholder="Nombre del proveedor">
+                    <input name= "proveedor" type="text" class="form-control" id="inputSupplier" placeholder="Nombre del proveedor">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Precio</label>
-                    <input type="number" class="form-control" id="inputPrice" placeholder="Precio del producto">
+                    <input name = "precio" type="number" class="form-control" id="inputPrice" placeholder="Precio del producto">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Stock</label>
-                    <input type="number" class="form-control" id="inputStock" placeholder="Cantidad disponible">
+                    <input name="stock" type="number" class="form-control" id="inputStock" placeholder="Cantidad disponible">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">Descipción</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input name = "desc" type="text" class="form-control" id="inputCity">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputState">Categoria</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                    <select name = "cate" id="inputState" class="form-control">
+                        <option selected>- Seleccione -</option>
+                        <option value="1">Producto</option>
+                        <option value="2">Servicio</option>
                     </select>
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputZip">Código de Barras</label>
-                    <input type="text" class="form-control" id="inputZip">
+                    <input name ="cb" type="number" class="form-control" id="inputcb" placeholder="Código de Barras">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Guardar</button>
-            <button type="submit" class="btn btn-primary">Crear Código</button>
+            <button type="submit" class="btn btn-primary" id="guardar">Guardar</button>
         </form>
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-10">
+                <?php require_once "tabla.php" ?>
+            </div>
+        </div>
+
+
     </div>
 </body>
 
