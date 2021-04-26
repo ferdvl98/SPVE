@@ -1,4 +1,9 @@
-<?php require_once "vistas/parte_superior.php"?>
+<?php 
+require "insertar_cliente.php";
+require_once "vistas/parte_superior.php";
+        
+    
+?>
 
 <!--INICIO DEL CONT PRINCIPAL-->
 <!DOCTYPE html>
@@ -15,7 +20,8 @@
 <body>
     <div class="container"><br><br> 
         <legend>Registrar Cliente</legend>
-        <form id="formulario" action="insertar_cliente.php" method="post">
+        <span class="msg-error"> <?php echo $email_err; ?> </span>
+        <form id="formulario" action="" method="post">
             <div class="form-row">
                 <div class="form-group col-md-3">
                     <label for="inputEmail4">Nombre</label>
@@ -40,7 +46,7 @@
                 <div class="form-group col-md-5">
                     <label for="inputState">Municipio</label>
                     <select name = "municipio" id="inputState" class="form-control">
-                        <option selected>- Seleccione -</option>
+                        <option value = "0" selected>- Seleccione -</option>
                         <option value="1">Ixtlahuca</option>
                         <option value="2">Jiquipilco</option>
                         <option value="3">San Felipe del Progreso</option>
@@ -63,7 +69,7 @@
                     <input name = "exterior" type="number" class="form-control" id="inputStock" placeholder="NumExt">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" id="guardar">Guardar</button>
+            <button type="submit" class="btn btn-primary" name = "submit" id="guardar">Guardar</button>
         </form>
     </div>
 </body>
