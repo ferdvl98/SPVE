@@ -1,4 +1,6 @@
-<?php require_once ("./vistas/parte_superior.php")?>
+<?php require_once "vistas/parte_superior.php"?>
+
+<!--INICIO DEL CONT PRINCIPAL-->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -35,7 +37,7 @@
 <body>
     <div class="container"><br><br>
         <legend>Productos</legend>
-        <form id="formulario" action="../php/insertar_cb.php" method="post">
+        <form id="formulario" action="insertar_cb.php" method="post">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Producto</label>
@@ -87,3 +89,5 @@
 </body>
 
 </html>
+<!--FIN DEL CONT PRINCIPAL-->
+<?php require_once "vistas/parte_inferior.php"?>

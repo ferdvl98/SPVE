@@ -67,7 +67,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tipos de ventas:</h6>
                         <a class="collapse-item" href="buttons.php">Venta Productos</a>
-                        <a class="collapse-item" href="cards.php">Servicios</a>
+                        <a class="collapse-item" href="buttons.php">Servicios</a>
                     </div>
                 </div>
             </li>
@@ -83,7 +83,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Registros:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Registrar</a>
+                        <a class="collapse-item" href="cliente.php">Registrar</a>
                     </div>
                 </div>
             </li>
@@ -106,7 +106,7 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Almacen</h6>
-                        <a class="collapse-item" href="./CB/codigo.php">Registro de Productos</a>
+                        <a class="collapse-item" href="codigo.php">Registro de Productos</a>
                         <!--
                         <a class="collapse-item" href="register.html">Register</a>
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
@@ -123,7 +123,7 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="ver_usuarios.php">
                     <i class="fas fa-fw fa-address-book"></i>
                     <span>Ver usuarios</span></a>
             </li>

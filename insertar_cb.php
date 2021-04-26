@@ -1,5 +1,5 @@
 <?php
-    require_once "../php/conexion.php";
+    require_once "conexion.php";
 
     $pro = $_POST["producto"];
     $prov = $_POST["proveedor"];
